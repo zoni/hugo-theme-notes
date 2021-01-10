@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--
+    Theme based on sidey by Ronalds Vilciņš (https://github.com/ronv/sidey).
+  -->
+  {{ partial "head" . }}
+  <body>
+    <main role="main">
+      <header role="banner">
+        <nav role="navigation">
+          {{ if .Site.Menus.navigation }}
+            {{ partial "navigation-menu" (dict "page" . "menu" .Site.Menus.navigation) }}
+          {{ else }}
+            {{ partial "navigation-filetree" . }}
+          {{ end }}
+        </nav>
+      </header>
+      <section class="post">
+      {{ block "main" . }}{{ end }}
+      </section>
+    </main>
+  </body>
+</html>
