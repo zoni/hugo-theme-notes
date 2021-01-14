@@ -1,6 +1,6 @@
-# Sidey
+# Notes theme
 
-This is a Hugo port of the [sidey] theme from Ronalds Vilciņš.
+This is a Hugo port of the [sidey] theme from Ronalds Vilciņš, heavily customized for use on [notes.nick.groenen.me].
 
 ## Search
 
@@ -51,3 +51,4 @@ This will make the search page available at `/search`.
 
 [sidey]: https://github.com/ronv/sidey
 [lunr]: https://lunrjs.com/
+[notes.nick.groenen.me]: https://notes.nick.groenen.me/
