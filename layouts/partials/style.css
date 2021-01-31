@@ -33,14 +33,6 @@ pre {
   margin: .5rem 0;
 }
 
-.post h1, .post h2, .post h3, .post h4 {
-  margin: 1rem 0;
-}
-
-.post h2:first-child, .project h2:first-child, .photo h2:first-child {
-  margin-top: 0;
-}
-
 .meta {
   margin: 2rem 0;
 }
@@ -113,6 +105,22 @@ h1,h2,h3,h4,h5 {
 
 section h1:first-child {
   margin-top: 0;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4, h5, h6 {
+  font-size: 16px;
 }
 
 strong, b {
