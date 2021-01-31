@@ -195,6 +195,11 @@ main {
 }
 
 @media screen and (max-width: 45rem ) {
+  main {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
   header li {
     display: inline;
     margin-right: 1rem;
