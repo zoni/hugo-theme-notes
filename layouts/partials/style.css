@@ -166,6 +166,21 @@ strong, b {
   padding: 0;
 }
 
+ul ul {
+  position: relative;
+}
+
+ul ul::before {
+  content:'';
+  border-left: 1px solid #c1c1c1;
+  position: absolute;
+}
+
+ul ul::before {
+  left: 2px;
+  top: 0;
+  bottom: 0;
+}
 
 .post li {
   margin-left: 2rem;
