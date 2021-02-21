@@ -180,7 +180,7 @@ window.addEventListener("DOMContentLoaded", function(event) {
       var element = template.content.cloneNode(true);
       element.querySelector(".search-result-title-ref").href = doc.uri;
       element.querySelector(".search-result-title-ref").textContent = doc.title;
-      element.querySelector(".search-result-summary").textContent = truncate(doc.content, 25);
+      element.querySelector(".search-result-summary").textContent = doc.description;
       results_container.appendChild(element);
     }
     //title.scrollIntoView(true);
