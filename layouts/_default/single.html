@@ -1,12 +1,4 @@
 {{ define "main" }}
-  {{/*
-    Hack: check whether the content starts with a heading by looking for a partial <h1>, <h2>, etc tag at the beginning of content.
-
-    Technique from https://github.com/squidfunk/mkdocs-material/blob/e6b210fa63a3f095798a826d71b03e2a1f0e7fb2/src/base.html#L303-L310
-  */}}
-  {{ if not (hasPrefix .Content "\x3ch") }}
-    <h1>{{ partial "title" . }}</h1>
-  {{ end }}
   {{ with .Content }}
     {{ if $.Param "stripHighlights" | default false }}
       {{ partial "strip-highlights" . }}
